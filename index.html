@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Final Project</title>
+    <link rel="icon" href="img/icon.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<nav class="my-nav navbar navbar-expand-md navbar-light bg-light sticky-top p-0">
 	<div class="container-fluid">
-        <a href="#" class="navbar-brand"><img src="img/logo.png" alt=""></a>
+        <a href="#" class="navbar-brand"><img width="300px" src="img/frogget.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#top" class="js-scroll-trigger nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">About</a>
@@ -30,14 +31,14 @@
                     <a href="#" class="nav-link">Buy The Book</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="js-scroll-trigger nav-link">Contact</a>
                 </li>
             </ul>
         </div>
 	</div>
 </nav>
 <!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
+<div id="slides" class="carousel slide image-carousel" data-ride="carousel">
     <ul class="carousel-indicators">
         <li data-target="#slides" data-slide-to="0" class="active"></li>
         <li data-target="#slides" data-slide-to="1"></li>
@@ -51,9 +52,11 @@
                 <button type="button" class="btn btn-lg btn-outline-light">
                     Buy My Book!
                 </button>
-                <button type="button" class="btn btn-lg btn-primary">
-                    Contact Me!
-                </button>
+                <a href="#contact" class="js-scroll-trigger">
+                    <button type="button" class="btn btn-lg btn-primary">
+                        Contact Me!
+                    </button>
+                </a>
             </div>
         </div>
         <div class="carousel-item">
@@ -65,32 +68,20 @@
     </div>
 </div>
 
-<!--- Jumbotron -->
-<div class="container-fluid">
-    <div class="row jumbotron">
-        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam expedita earum animi deserunt sed dolor adipisci, molestiae magnam rerum eum dignissimos voluptas veritatis voluptate. Suscipit similique explicabo vero. Est.</p>
-
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-            <a href="#">
-                <button class="btn btn-lg btn-outline-secondary">
-                    Web Hosting
-                </button>
-            </a>
-        </div>
-    </div>
-</div>
-
 <!--- Welcome Section -->
-<div class="container fluid padding">
+<div class="container fluid padding my-5">
     <div class="row welcome text-center">
         <div class="col-12">
-            <h1 class="display-4">Built with ease.</h1>
+            <h1 class="display-4">Presenting My Newest Works !</h1>
         </div>
-        <hr>
-        <div class="col-12">
-            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi ipsa, animi iure laboriosam blanditiis natus sapiente ipsum perspiciatis, adipisci amet eum nobis quam labore asperiores aperiam obcaecati facere autem. Repudiandae.</p>
+        <hr class="light">
+    </div>
+    <div class="row my-5">
+        <div class="col-lg-10 col-md-12">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse sint reprehenderit recusandae veniam eaque rerum possimus, labore iusto impedit er</p>
+        </div>
+        <div class="col-lg-2 col-md-12">
+            <img src="img/book.png" alt="My Book Cover" class="img-fluid">
         </div>
     </div>
 </div>
@@ -99,10 +90,10 @@
 
 
 <!--- Two Column Section -->
-<div class="container-fluid padding">
+<div class="container-fluid padding my-5">
     <div class="row padding">
         <div class="col-md-12 col-lg-6">
-            <h2>If you build it..</h2>
+            <h2>My New BOOK !</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste beatae dolorum, corrupti minima eveniet nemo dolores, ducimus itaque totam delectus officia iure perferendis fuga non, maiores quas enim natus voluptates!</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste beatae dolorum, corrupti minima eveniet nemo dolores, ducimus itaque totam delectus officia iure perferendis fuga non, maiores quas enim natus voluptates!</p>
             <p>Lorem ipsum dolor, sit amet consectetur adipinon, maiores quas enim natus voluptates!</p>
@@ -110,7 +101,7 @@
             <a href="#" class="btn btn-primary">Learn More</a>
         </div>
         <div class="col-lg-6">
-            <img src="Pictures/DSC_7485.jpg" alt="" class="img-fluid">
+            <img src="Pictures/beki.png" alt="" class="img-fluid">
         </div>
     </div>
 </div>
@@ -136,41 +127,39 @@
 
 <!--- Two Column Section -->
 
-
 <!--- Connect -->
-<div class="container-fluid padding">
+<div id="contact" class="container-fluid padding">
     <div class="row text-center padding">
         <div class="col-12">
-            <h2>Connect</h2>
+            <h2 class="display-4 my-5">Contact Me !</h2>
         </div>
         <div class="col-12 social padding">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-facebook" target="_blank"></i></a>
+            <a href="#"><i class="fab fa-twitter" target="_blank"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g" target="_blank"></i></a>
+            <a href="#"><i class="fab fa-instagram" target="_blank"></i></a>
+            <a href="https://www.youtube.com/channel/UCDYwYoicVNSuwZi9k7WfpMQ" target="_blank"><i class="fab fa-youtube"></i></a>
         </div>
     </div>
 </div>
+<hr class="my-4">
 
 <!--- Footer -->
 <footer>
-    <div class="container-fluid padding">
-        <div class="row text-center">
-            <div class="col-md-4">
-                <img src="img/w3newbie.png" class="" alt="">
-                <hr class="light">
-                <p>xx-xxx-xxx</p>
-                <p>email@email.com</p>
-                <p>Tunis</p>
-            </div>
-        </div>
-    </div>
+        <p class="text-muted small mb-0 text-center my-3 bg-dark py-3">Copyright &copy; Fares & Eya -GMC- 2018</p>
 </footer>
 
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#slides">
+    <i class="fas fa-angle-up"></i>
+</a>
 
-</body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
 <script src="js/main.js"></script>
+
+</body>
+
+
 </html>
