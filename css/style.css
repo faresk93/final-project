@@ -25,9 +25,14 @@ html, body{
     border-bottom:3px solid darkviolet;
 }
 
-.image-carousel{
-   
+.image-carousel div{
+   height:calc(100vh - 87.25px) !important
 }
+
+.image-carousel div{
+    height:calc(100vh - 87.25px) !important;
+    text-align:center
+ }
 
 .carousel-inner img{
     width:100%;
@@ -36,8 +41,8 @@ html, body{
 
 .carousel-caption{
     position:absolute;
-    top:50%;
-    transform: translateY(-50%);
+    top:50vh;
+    transform: translateY(0%);
 }
 
 .carousel-caption h1{
